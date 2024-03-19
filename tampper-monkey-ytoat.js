@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         automatic original audio track selector
 // @namespace    http://tampermonkey.net/
-// @version      2024-03-20
+// @version      2024-03-19
 // @description  Changes the default audio track of youtube video player for the original of the video
 // @author       Jemd
 // @match        https://*.youtube.com/watch*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
+// @updateURL    https://github.com/jemd15/yt-original-audio-track-selector/raw/main/tampper-monkey-ytoat.js
+// @downloadURL  https://github.com/jemd15/yt-original-audio-track-selector/raw/main/tampper-monkey-ytoat.js
 // @grant        none
 // ==/UserScript==
 
