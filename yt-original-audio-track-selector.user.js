@@ -6,8 +6,8 @@
 // @author       Jemd
 // @match        https://*.youtube.com/watch*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
-// @updateURL    https://raw.githubusercontent.com/jemd15/yt-original-audio-track-selector/main/tampper-monkey-ytoat.js
-// @downloadURL  https://raw.githubusercontent.com/jemd15/yt-original-audio-track-selector/main/tampper-monkey-ytoat.js
+// @updateURL    https://github.com/jemd15/yt-original-audio-track-selector/raw/main/yt-original-audio-track-selector.user.js
+// @downloadURL  https://github.com/jemd15/yt-original-audio-track-selector/raw/main/yt-original-audio-track-selector.user.js
 // @grant        none
 // ==/UserScript==
 
