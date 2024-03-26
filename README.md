@@ -21,7 +21,7 @@ This repository contains a userscript designed to automaticly select the origina
    - [Tampermonkey for Opera/OperaGX](https://addons.opera.com/en-gb/extensions/details/tampermonkey-beta/)
 
 2. **Install the Script**:
-   [Click Here and Press Install](tampper-monkey-ytoat.js?raw=True).
+   [Click Here and Press Install](https://raw.githubusercontent.com/jemd15/yt-original-audio-track-selector/main/tampper-monkey-ytoat.js).
 
 3. **Enable the Script**:
    Enable the script by clicking the switch next to the script name in the Tampermonkey Dashboard.
