@@ -11,7 +11,7 @@
 // @grant        none
 // ==/UserScript==
 
-(() => {
+(function () {
 	('use strict');
 
 	// --- GLOBALS --------
@@ -37,24 +37,24 @@
 	// --------------------
 
 	// Attempt to set the original audio track
-	setOriginalAudioTrack = ytPlayer => {
+	function setOriginalAudioTrack(ytPlayer) {
 		debugLog('Setting original audio track...');
 
 		let audioTracks = ytPlayer.getAvailableAudioTracks();
 
 		ytPlayer.setAudioTrack(audioTracks.find(track => track.c.displayName.includes('original')));
-	};
+	}
 
 	// --------------------
 
 	// Set resolution, but only when API is ready (it should normally already be ready)
-	setOrigAudioTrack = ytPlayer => {
+	function setOrigAudioTrack(ytPlayer) {
 		!ytPlayer.getAvailableAudioTracks ? window.setTimeout(setOrigAudioTrack, 100, ytPlayer) : setOriginalAudioTrack(ytPlayer);
-	};
+	}
 
 	// --------------------
 
-	main = () => {
+	function main() {
 		let ytPlayer = document.getElementById('movie_player') || document.getElementsByClassName('html5-video-player')[0];
 		let ytPlayerUnwrapped = unwrapElement(ytPlayer);
 
@@ -83,7 +83,7 @@
 
 		// This will eventually be changed to use the "once" option, but I want to keep a large range of browser support.
 		window.removeEventListener('yt-navigate-finish', main, true);
-	};
+	}
 
 	main();
 	// Youtube doesn't load the page immediately in new version so you can watch before waiting for page load
