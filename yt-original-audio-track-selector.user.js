@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         automatic original audio track selector
 // @namespace    http://tampermonkey.net/
-// @version      1.0.3
+// @version      1.0.4
 // @description  Changes the default audio track of youtube video player for the original of the video
 // @author       Jemd
 // @match        https://*.youtube.com/watch*
@@ -42,7 +42,7 @@
 
 		let audioTracks = ytPlayer.getAvailableAudioTracks();
 
-		ytPlayer.setAudioTrack(audioTracks.find(track => track.qc.name.includes('original')));
+		ytPlayer.setAudioTrack(audioTracks.find(track => JSON.stringify(track).includes('original')));
 	}
 
 	// --------------------
